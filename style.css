@@ -248,6 +248,7 @@ section .title::after{
 }
 .home-content{
     padding-top: 50%;
+    padding-bottom: 100px;
 }
 
 .btn {
