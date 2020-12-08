@@ -6,12 +6,15 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-html{
+html, body{
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
 }
 /**************************background styling **************************/
 .background{
     background-image: url("Images/background.png");
+    background-blend-mode: multiply ;
     background-size: cover;
     padding-bottom: 100px;
 }
@@ -322,10 +325,10 @@ section .title::after{
     font-weight: bold;
 }
 .about .about-content .left{
-    width: 30%;
+    width: 40%;
 }
 .about .about-content .right{
-    width: 70%;
+    width: 60%;
 }
 .about .about-content .right .text{
     font-size: 1.2rem;
