@@ -333,6 +333,9 @@ section .title::after{
     margin-bottom: 30px;
     text-align: left;
 }
+.about .about-content .right img{
+    padding-left: 10px;
+}
 .about .about-content .right p{
     color: black;
     font-weight: 500;
