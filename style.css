@@ -14,7 +14,6 @@ html{
     background-image: url("Images/background.png");
     background-size: cover;
     padding-bottom: 100px;
-    margin-bottom: 100px;
 }
 /**************************extra scrollbar styling **************************/
 ::-webkit-scrollbar {
@@ -138,6 +137,8 @@ section .title::after{
 }
 .home-content{
     text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 .fa-facebook{
     border-radius: 100%;
@@ -290,6 +291,7 @@ section .title::after{
     font-size: 3rem;
     font-weight: bold;
     font-family: "Roboto","sans-serif";
+    margin-top: 0 0 0 0;
 }
 .typing-2{
     color: crimson ;
