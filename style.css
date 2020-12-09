@@ -3547,7 +3547,6 @@ p {
     padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
-    margin-right: 30px;
 }
 .navbar.sticky{
   margin-right: 30px;
