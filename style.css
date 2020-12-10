@@ -1079,9 +1079,24 @@ p {
 /* ---------------------------------------------------------------- */
 @media only screen and (max-width: 991.98px) {
   .hero-section .hero-row .hero-section-inner .hero-title {
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 30px;
   }
+  .btn-group{
+  text-align: center;
+}
+.hero-social{
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+.hero-section .hero-section-inner .hero-title {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+}
 }
 /* ---------------------------------------------------------------- */
 /* 11.About                             
