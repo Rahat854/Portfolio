@@ -58,7 +58,13 @@
 /* ---------------------------------------------------------------- */
 /* 01.Base                               
 /* ---------------------------------------------------------------- */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 body, html {
+  margin-top: 0;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -2860,3 +2866,212 @@ p {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+
+}
+.page-wrapper{
+  margin-top: 0;
+}
+section{
+  margin-top: 0;
+}
+
+
+
+/* navbar styling */
+.navbar{
+  margin-top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+  margin-top: 0;
+  padding-top: 10px;
+    padding: 10px 0;    /*changed*/
+    background: #16a085;  /* changed*/
+}
+.navbar .max-width{
+  margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+  margin-top: 0;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+  margin-top: 0;
+    color: #f1c40f;     
+    transition: all 0.3s ease;
+}
+.navbar.sticky .logo a span{
+  margin-top: 0;
+    color: #fff;
+}
+.navbar .menu li{
+  margin-top: 0;
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+  margin-top: 0;
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    margin-top: 0;
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+  margin-top: 0;
+    color: #fff;
+}
+@media (max-width: 1300px) {
+    .home .max-width{
+      margin-top: 0;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+      margin-top: 0;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+      margin-top: 0;
+        left: 0;
+    }
+    .navbar .menu li{
+      margin-top: 0;
+        display: block;
+    }
+    .navbar .menu li a{
+      margin-top: 0;
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+    .skills .skills-content .column,
+    .contact .contact-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .services .serv-content .card{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
