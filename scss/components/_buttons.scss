@@ -1,0 +1,94 @@
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                     
+/* ---------------------------------------------------------------- */
+.default-button {
+    padding: 16px 40px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+    text-align: center;
+    border-radius: 100px;
+    background: $color_primary;
+    border: 6px solid $color_white;
+    color: $color_white;
+    box-shadow: 0 5px 8px 0 rgba(61, 82, 96, 0.2);
+    &:hover {
+        background: $color_dark_blue;
+        color: $color_white;  
+    }
+}
+.scroll-down-btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    z-index: 444;
+    width: 56px;
+    height: 56px;
+    line-height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    background: $color_primary;
+    color: $color_white !important;;
+    border: 6px solid $color_white;
+    box-shadow: 0 5px 8px 0 rgba(61, 82, 96, 0.2);
+    transition: all 0.25s ease;
+    transform: translateX(-50%);
+    &:hover {
+        background: $color_dark_blue;
+        color: $color_white;  
+    }
+}
+.scroll-top-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 100;
+    width: 56px;
+    height: 56px;
+    line-height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    background: $color_primary;
+    transition: all 0.25s ease;
+    color: $color_white !important;;
+    border: 6px solid $color_white;
+    box-shadow: 0 5px 8px 0 rgba(61, 82, 96, 0.2);
+    &:hover {
+        background: $color_dark_blue;
+        color: $color_white;  
+    }
+    &.active {
+        opacity: 1;
+        bottom: 20px;
+        visibility: visible;
+    }
+}
+// Owl Carousel
+.owl-carousel {
+    .owl-nav {
+        margin-top: 20px;
+        button {
+            &.owl-next, &.owl-prev {
+                margin: 0;
+                width: 56px;
+                height: 56px;
+                line-height: 46px;
+                border-radius: 50%;
+                text-align: center;
+                background: $color_primary;
+                transition: all 0.25s ease;
+                color: $color_white !important;;
+                border: 6px solid $color_white;
+                box-shadow: 0 5px 8px 0 rgba(61, 82, 96, 0.2);
+                &:hover {
+                    background: $color_dark_blue;
+                }
+            }
+            &.owl-prev {
+                margin-right: 10px;
+            }
+        }
+    }
+}

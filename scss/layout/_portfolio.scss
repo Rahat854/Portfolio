@@ -1,0 +1,140 @@
+/* ---------------------------------------------------------------- */
+/* 16.Portfolio                                                     
+/* ---------------------------------------------------------------- */
+.portfolio-filter-wrap {
+    text-align: center;
+    .portfolio-filter {
+        display: inline-block;
+        margin: 0 auto 50px auto;
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        a {
+            color: $color_dark_blue;
+            padding: 10px 20px;
+            border-radius: 100px;
+            position: relative;
+            margin-right: 10px;
+            text-align: center;
+            border:6px solid $color_white;
+            text-transform: capitalize;
+            transition: all 0.25s ease;
+            float: left;
+            font: {
+                weight: 500;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover, &.current {
+                background: $color_primary;
+                color: $color_white;
+                box-shadow: 0 5px 8px 0 $color_shadow_hover;
+            }
+        }
+    }
+}
+// Portfolio Item
+.glry-item {
+    margin: 0 0 30px 0;
+    position: relative;
+    overflow: hidden;
+    .portfolio-item-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        img {
+            border-radius: 5px;
+        }
+        &:after, .portfolio-detail-title {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+        }
+        &:after {
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;    
+            height: 100%;
+            transition: all 0.35s ease-in-out;
+            background: rgba($color_dark_blue, 0.75);
+        }
+        .portfolio-detail-title {
+            font: {
+                weight: 400;
+            }
+            top: 0;
+            left: 50%;
+            z-index: 25;
+            text-align: center;
+            color: $color_white;
+            transition: all 0.25s ease-in-out;
+            transform: translateX(-50%);
+        }
+    }
+    .portfolio-buttons {
+        bottom: 0;
+        opacity: 0;
+        position: absolute;
+        visibility: hidden;
+        display: flex;
+        left: 50%;
+        padding: 15px;
+        border-radius: 100px;
+        background: $color_white;
+        transition: all 0.35s ease-in-out;
+        transform: translateX(-50%);
+        a {
+            height: 56px;
+            width: 56px;
+            line-height: 46px;
+            display: inline-block;
+            margin-right: 10px;
+            text-align: center;
+            border-radius: 50%;
+            border:6px solid $color_white;
+            transition: all 0.25s ease;
+            background: $color_primary;
+            color: $color_white;
+            box-shadow: 0 5px 8px 0 $color_shadow_hover;
+            &:hover {
+                background: $color_dark_blue;
+                color: $color_white;  
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+    // Hover
+    &:hover .portfolio-detail-title, &:hover .portfolio-item-img::after, &:hover .portfolio-buttons {
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover .portfolio-buttons {
+       bottom: 30px;
+    }
+    &:hover .portfolio-detail-title {
+        top: 30px;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+/* Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:767.98px) {
+    .portfolio-filter-wrap {
+        .portfolio-filter {
+            a {
+                display: inline-block;
+                float: none;
+                &:last-child {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

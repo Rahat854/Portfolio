@@ -1,0 +1,84 @@
+/* ---------------------------------------------------------------- */
+/* 27.Blog Single                              
+/* ---------------------------------------------------------------- */
+.blog-single-inner {
+    .blog-single-img {
+        margin-bottom: 30px;
+    }
+    .blog-single-title {
+        font : {
+            size: 2rem;
+        }
+        margin-bottom: 20px;
+    }
+    .blog-links {
+        margin-bottom: 20px;
+        span {
+            margin-right: 10px;
+            color: $color_dark_blue;
+            font: {
+                weight: 500;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                color: $color_primary;
+                margin-right: 10px;
+            }
+        }
+    }
+    .blog-inner-text {
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .blog-post-quote {
+        blockquote {
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 5px;
+            border-left: 5px solid $color_primary;
+            box-shadow: 0 10px 20px 0 $color_shadow;
+            p {
+                position: relative;
+                font : {
+                    size: 1.2rem;
+                    style: italic;
+                }
+                color: $color_dark_blue;
+                &:after {
+                    content: "\f10d";
+                    top: 0;
+                    left: 0;
+                    color: $color_primary;
+                    font: {
+                        family: "Font Awesome 5 Free";
+                        weight: 600;
+                        size: 3rem;
+                    }
+                    position: absolute;
+                    opacity: 0.1;
+                    z-index: -16;
+                }
+                strong {
+                    margin-top: 10px;
+                    display: block;
+                    color: $color_dark_blue;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+    .blog-single-inner {
+        .blog-sidebar {
+            margin-top: 30px;
+        }
+    }
+}

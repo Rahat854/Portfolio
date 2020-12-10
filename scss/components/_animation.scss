@@ -1,0 +1,66 @@
+/* ---------------------------------------------------------------- */
+/* 05.Animations                                                     
+/* ---------------------------------------------------------------- */
+@keyframes stickyMenu {
+	0% {
+		margin-top: -120px;
+		opacity: 0;
+	}
+	50% {
+		margin-top: -64px;
+		opacity: 0;
+	}
+	100% {
+		margin-top: 0;
+		opacity: 1;
+	}
+}
+@keyframes pulseOrange {
+	0% {
+		box-shadow: 0 0 0 0 rgba($color_primary, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 20px rgba($color_primary, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba($color_primary, 0);
+	}
+}
+@keyframes pulseWhite {
+	0% {
+		box-shadow: 0 0 0 0 rgba($color_white, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 20px rgba($color_white, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba($color_white, 0);
+	}
+}
+@keyframes scrollPulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba($color_primary, 0.4);
+	}
+	70% {
+		box-shadow: 0 0 0 10px rgba($color_primary, 0);
+	}
+	100% {
+	  box-shadow: 0 0 0 0 rgba($color_primary, 0);
+	}
+}
+@keyframes loaderSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotateIcon {
+	0%{
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}

@@ -1,0 +1,56 @@
+/* ------------------------------------------------------------------- */
+/* 13.Skills                                                   
+/* ------------------------------------------------------------------- */
+.skills-progress-wrap {
+    .skills-item {
+        overflow: hidden;
+        padding: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        border-radius: 10px;
+        background: $color_white;
+        transition: all 0.25s linear;
+        box-shadow: 0 10px 28px 0 $color_shadow;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .skills-progress-bar {
+            height: 20px;
+            position: relative;
+            background: $color_dark_blue;
+            border-radius: 100px;
+            margin-top: 15px;
+            overflow: hidden;
+            border:6px solid $color_white;
+            box-shadow: 0 5px 8px 0 $color_shadow_hover;
+            .skills-progress-value {
+                height: 100%;
+                position: absolute;
+                background: $color_primary;
+                border-radius: 100px;
+                top: 0;
+                left: 0;
+            }
+        }
+        .skills-item-text {
+            h6 {
+                font : {
+                    size: 1rem;
+                }
+                .skill-percent {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:767.98px) {
+    .skills-inner-mb-resp {
+        margin-bottom: 30px;
+    }
+}
