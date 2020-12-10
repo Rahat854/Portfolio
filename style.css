@@ -1069,6 +1069,7 @@ p {
   box-sizing: border-box;
 }
 .btn-group{
+  position: relative;
   text-align: center;
 }
 
@@ -1084,6 +1085,7 @@ p {
     margin-bottom: 30px;
   }
   .btn-group{
+    position: relative;
   text-align: center;
 }
 .hero-social{
