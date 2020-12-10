@@ -1069,11 +1069,12 @@ p {
 .hero-social{
   position: relative;
   text-align: center;
-  box-sizing: border-box;
+
 }
 .btn-group{
   position: relative;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 
@@ -1125,6 +1126,7 @@ p {
   display: relative;
   float: right;
   width: 55%;
+  margin-right: 20px;
 }
 .about-inner .about-sub-title {
   font-weight: 400;
