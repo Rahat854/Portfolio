@@ -164,7 +164,7 @@ p {
   position: absolute;
   content: "";
   left: 50%;
-  height: 16px;
+  height: 4px;
   background: #FF4F1A;
   transform: translateX(-50%);
   border: 6px solid #fff;
@@ -176,9 +176,9 @@ p {
   border-radius: 100px;
 }
 .section .section-heading .section-title:after {
-  bottom: -4px;
-  width: 24px;
-  height: 24px;
+  bottom: -3px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: #FF4F1A;
   border: 6px solid #fff;
@@ -298,8 +298,8 @@ p {
   bottom: 30px;
   left: 50%;
   z-index: 444;
-  width: 56px;
-  height: 56px;
+  width: 3rem;
+  height: 3rem;
   line-height: 46px;
   border-radius: 50%;
   text-align: center;
@@ -1012,8 +1012,8 @@ p {
 .hero-section .hero-section-inner .hero-social a {
   display: inline-block;
   margin-right: 10px;
-  width: 56px;
-  height: 56px;
+  width: 3rem;
+  height: 3rem;
   line-height: 46px;
   border-radius: 50%;
   text-align: center;
@@ -1031,11 +1031,13 @@ p {
   margin-right: 0;
 }
 .hero-section .hero-section-inner .hero-sup-title {
+  text-align: center;
   color: #fff;
   margin-bottom: 15px;
   font-weight: 500;
 }
 .hero-section .hero-section-inner .hero-title {
+  text-align: center;
   font-weight: 700;
   margin-bottom: 50px;
   color: #fff;
@@ -1061,6 +1063,15 @@ p {
   position: relative;
   z-index: 17;
 }
+.hero-social{
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+.btn-group{
+  text-align: center;
+}
+
 
 /* ---------------------------------------------------------------- */
 /* Responsive Media Query
@@ -1075,44 +1086,29 @@ p {
 /* ---------------------------------------------------------------- */
 /* 11.About                             
 /* ---------------------------------------------------------------- */
-.about-left-inner {
-  position: relative;
-}
-.about-left-inner:hover .about-video-btn i, .about-left-inner:hover .about-video-btn i:after {
-  animation: none;
-}
-.about-left-inner img {
-  border-radius: 5px;
-  box-shadow: 0 23px 49px 0 rgba(0, 0, 0, 0.3);
-}
-.about-left-inner .about-video-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.about-left-inner .about-video-btn i {
-  border-radius: 50%;
-  color: #fff;
-  background: #FF4F1A;
-  animation: pulse 2s ease infinite;
-  text-align: center;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  position: relative;
-}
-.about-left-inner .about-video-btn i:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  animation: pulseOrange 2s ease-in-out infinite;
-}
 
+.my-image img{
+  height: 300px;
+  width: 300px;
+  border-radius:100% ;
+  background: #303945;
+  border: 12px solid #303945;
+  max-width: 100%;
+
+}
+.my-image{
+  text-align: center;
+  width: 45%;
+  float: left;
+  top: 100px;
+}
+.about-inner{
+  display: relative;
+  float: right;
+  margin-left: 30px;
+  width: 55%;
+  bottom: 600px;
+}
 .about-inner .about-sub-title {
   font-weight: 400;
   margin-bottom: 10px;
@@ -1294,11 +1290,12 @@ p {
 /* 13.Skills                                                   
 /* ------------------------------------------------------------------- */
 .skills-progress-wrap .skills-item {
+  display: grid;
   margin: 0 100px 0 100px;
   overflow: hidden;
   padding: 20px;
   margin-bottom: 30px;
-  position: flex;
+  position: relative;
   border-radius: 10px;
   background: #fff;
   transition: all 0.25s linear;
@@ -1326,10 +1323,6 @@ p {
   top: 0;
   left: 0;
 }
-
-
-
-
 .skills-progress-wrap .skills-item .skills-item-text h6 {
   font-size: 1rem;
 }
@@ -2883,15 +2876,12 @@ p {
 .page-wrapper{
   margin-top: 0;
 }
-section{
-  margin-top: 0;
-}
 
 
 
 /* navbar styling */
 .navbar{
-  margin-top: 0;
+
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -2900,39 +2890,37 @@ section{
     transition: all 0.3s ease;
 }
 .navbar.sticky{
-  margin-top: 0;
+
   padding-top: 10px;
     padding: 10px 0;    /*changed*/
     background: #16a085;  /* changed*/
 }
 .navbar .max-width{
-  margin-top: 0;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .navbar .logo a{
-  margin-top: 0;
+
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
 .navbar .logo a span{
-  margin-top: 0;
+
     color: #f1c40f;     
     transition: all 0.3s ease;
 }
 .navbar.sticky .logo a span{
-  margin-top: 0;
+
     color: #fff;
 }
 .navbar .menu li{
-  margin-top: 0;
     list-style: none;
     display: inline-block;
 }
 .navbar .menu li a{
-  margin-top: 0;
     display: block;
     color: #fff;
     font-size: 18px;
@@ -2941,17 +2929,16 @@ section{
     transition: color 0.3s ease;
 }
 .navbar .menu li a:hover{
-    margin-top: 0;
+
     color: crimson;
 }
 .navbar.sticky .menu li a:hover{
-  margin-top: 0;
+
     color: #fff;
 }
 @media (max-width: 1300px) {
     .home .max-width{
-      margin-top: 0;
-        margin-left: 0px;
+        margin-left: 30px;
     }
 }
 
@@ -2967,7 +2954,7 @@ section{
         padding: 0 50px;
     }
 }
-@media (max-width: 947px){
+@media (max-width: 767px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -2976,10 +2963,9 @@ section{
         content: "\f00d";
     }
     .navbar .menu{
-      margin-top: 0;
         position: fixed;
         height: 100vh;
-        width: 100%;
+        width: 40%;
         left: -100%;
         top: 0;
         background: #111;
@@ -2988,15 +2974,15 @@ section{
         transition: all 0.3s ease;
     }
     .navbar .menu.active{
-      margin-top: 0;
+
         left: 0;
     }
     .navbar .menu li{
-      margin-top: 0;
+
         display: block;
     }
     .navbar .menu li a{
-      margin-top: 0;
+
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -3014,16 +3000,17 @@ section{
     .max-width{
         max-width: 930px;
     }
-    .about .about-content .column{
-        width: 100%;
+    .my-image{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 60px;
     }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
+    .about-inner{
+        width: 95%;
+        margin-right: 20px;
         flex: 100%;
+        text-align: justify;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
