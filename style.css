@@ -1126,7 +1126,6 @@ p {
   display: relative;
   float: right;
   width: 55%;
-  margin-right: 20px;
 }
 .about-inner .about-sub-title {
   font-weight: 400;
@@ -1145,6 +1144,7 @@ p {
 }
 .about-inner .about-text {
   margin-bottom: 30px;
+  margin-right: 30px;
 }
 .about-inner .about-list {
   margin-bottom: 30px;
