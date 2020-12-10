@@ -64,3 +64,28 @@ $(document).ready(function(){
         }
     });
 });
+var skillsItem              = $('.skills-item');
+
+    skillsItem.each(function(){
+        // Variables
+        var skillPercent        = $(this).find(".skills-progress-value").attr("data-percent");
+
+        $(this).find(".skills-progress-value").css("width",skillPercent +"%");
+        $(this).find(".skills-item-text .skill-percent").html(skillPercent+"%");
+    });
+    var wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: true,
+        scrollContainer: null
+    });
+    wow.init();
+     var preloaderWrap           = $('.preloader-wrap'),
+        loaderInner             = $('.preloader-wrap .preloader-inner');
+
+    $(window).load("body",function(){
+        loaderInner.fadeOut(); 
+        preloaderWrap.delay(350).fadeOut('slow');
+    });   

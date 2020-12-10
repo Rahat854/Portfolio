@@ -1294,10 +1294,11 @@ p {
 /* 13.Skills                                                   
 /* ------------------------------------------------------------------- */
 .skills-progress-wrap .skills-item {
+  margin: 0 100px 0 100px;
   overflow: hidden;
-  padding: 30px;
+  padding: 20px;
   margin-bottom: 30px;
-  position: relative;
+  position: flex;
   border-radius: 10px;
   background: #fff;
   transition: all 0.25s linear;
@@ -1307,23 +1308,28 @@ p {
   margin-bottom: 0;
 }
 .skills-progress-wrap .skills-item .skills-progress-bar {
-  height: 20px;
-  position: relative;
+  height: 10px;
+  position: flex;
   background: #303945;
   border-radius: 100px;
-  margin-top: 15px;
+  margin-top: 10px;
   overflow: hidden;
   border: 6px solid #fff;
   box-shadow: 0 5px 8px 0 rgba(61, 82, 96, 0.2);
 }
 .skills-progress-wrap .skills-item .skills-progress-bar .skills-progress-value {
   height: 100%;
-  position: absolute;
+  width: 95%;
+  position: relative;
   background: #FF4F1A;
   border-radius: 100px;
   top: 0;
   left: 0;
 }
+
+
+
+
 .skills-progress-wrap .skills-item .skills-item-text h6 {
   font-size: 1rem;
 }

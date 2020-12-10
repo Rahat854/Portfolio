@@ -15,7 +15,7 @@
  * 06.ScrollSpy
  * 07.ScrollIt
  * 08.Magnific Popup
- * 09.IsotopÄŸe Gallery
+ * 09.Isotopğe Gallery
  * 10.Copyright
  * 11.Skills Bar
  * 12.Ripples Effect
@@ -368,7 +368,7 @@ function bollin_magnificPopup() {
     });
 }
 /* ------------------------------------------------------------------- */
-/* 09.IsotopÄŸe Gallery
+/* 09.Isotopğe Gallery
 /* ------------------------------------------------------------------- */
 function bollin_isotopeGallery() {
     "use-strict";
