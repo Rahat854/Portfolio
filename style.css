@@ -63,6 +63,9 @@
     padding: 0 80px;
     margin: auto;
 }
+p{
+  text-align: justify;
+}
 body, html {
   margin-top: 0;
   font-size: 16px;
@@ -1110,21 +1113,18 @@ p {
   border-radius:100% ;
   background: #303945;
   border: 12px solid #303945;
-  max-width: 100%;
 
 }
 .my-image{
+  position: relative;
   text-align: center;
   width: 45%;
   float: left;
-  top: 100px;
 }
 .about-inner{
   display: relative;
   float: right;
-  margin-left: 30px;
   width: 55%;
-  bottom: 600px;
 }
 .about-inner .about-sub-title {
   font-weight: 400;
@@ -1307,23 +1307,21 @@ p {
 /* 13.Skills                                                   
 /* ------------------------------------------------------------------- */
 .skills-progress-wrap .skills-item {
-  display: grid;
-  margin: 0 100px 0 100px;
   overflow: hidden;
   padding: 20px;
   margin-bottom: 30px;
   position: relative;
   border-radius: 10px;
   background: #fff;
+  margin: 30px 100px 30px 100px;
   transition: all 0.25s linear;
   box-shadow: 0 10px 28px 0 rgba(61, 82, 96, 0.15);
 }
-.skills-progress-wrap .skills-item:last-child {
-  margin-bottom: 0;
-}
+
 .skills-progress-wrap .skills-item .skills-progress-bar {
   height: 10px;
   position: flex;
+  margin: auto;
   background: #303945;
   border-radius: 100px;
   margin-top: 10px;
@@ -1333,7 +1331,7 @@ p {
 }
 .skills-progress-wrap .skills-item .skills-progress-bar .skills-progress-value {
   height: 100%;
-  width: 95%;
+  width: 100%;
   position: relative;
   background: #FF4F1A;
   border-radius: 100px;
@@ -1345,6 +1343,10 @@ p {
 }
 .skills-progress-wrap .skills-item .skills-item-text h6 .skill-percent {
   float: right;
+}
+
+.skills-progress-wrap{
+  display:grid;
 }
 
 /* ---------------------------------------------------------------- */
@@ -1516,6 +1518,9 @@ p {
 /* ---------------------------------------------------------------- */
 .portfolio-filter-wrap {
   text-align: center;
+  align-items: center;
+   margin: auto;
+  width: 50%;
 }
 .portfolio-filter-wrap .portfolio-filter {
   display: inline-block;
@@ -1552,12 +1557,23 @@ p {
   margin: 0 0 30px 0;
   position: relative;
   overflow: hidden;
+  align-items: center;
 }
 .glry-item .portfolio-item-img {
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  height: 400px;
+  width: 400px;
   position: relative;
   overflow: hidden;
+  background: #303945;
+  border: 6px solid #303945;
   border-radius: 5px;
+  margin: auto;
+ 
 }
+
 .glry-item .portfolio-item-img img {
   border-radius: 5px;
 }
@@ -3027,7 +3043,9 @@ p {
         width: 95%;
         margin-right: 20px;
         flex: 100%;
-        text-align: justify;
+    }
+    p{
+      text-align: justify;
     }
     .services .serv-content .card{
         width: calc(50% - 10px);
