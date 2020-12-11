@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* -------------------------------------------------------------------
- * Template Name         : Bollin - Portfolio Template
- * Theme Author Name     : Yucel Yilmaz
- * Created Date          : 10 March 2020
+ * Template Name         : Rahat - Personal website Template
+ * Theme Author Name     : Rahat Kabir
+ * Created Date          : 10 December 2020
  * Version               : 1.0
 ------------------------------------------------------------------- */
 /* -------------------------------------------------------------------
@@ -39,20 +39,10 @@
  * 23.Contact
  * 24.BreadCrumb 
    ------------------------ /
-   Inner Pages                              
-   ------------------------ /
- * 25.Portfolio Single
- * 26.Portfolio Full Width   
- * 27.Blog Single
- * 28.Blog Sidebar
- * 29.Services
-   ------------------------ /
    Home Pages                              
    ------------------------ /
- * 30.Home Slider 
  * 31.Home Particles
- * 32.Home Page Youtube Video
- * 33.Home Glitch Img
+
 
 ------------------------------------------------------------------- */
 /* ---------------------------------------------------------------- */
@@ -2970,6 +2960,65 @@ p {
 .navbar.sticky .menu li a:hover{
 
     color: #fff;
+}
+.section .rows .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.section .rows .card:hover{
+    background: crimson;
+}
+.section .rows .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.section .rows .card:hover .box{
+    transform: scale(1.05);
+}
+.section .rows .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.section .rows .card img{
+
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5%;    /*Here*/
+    border: 4px solid crimson;
+    transition: all 0.3s ease;
+}
+.section .rows .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
 }
 @media (max-width: 1300px) {
     .home .max-width{
