@@ -1966,11 +1966,14 @@ p {
 /* ---------------------------------------------------------------- */
 .banner-wrap {
   position: relative;
+  background-image: url("Images/Header\ Background.jpg");
+  background-size: cover;
 }
 .banner-wrap .banner-inner {
   position: relative;
 }
 .banner-wrap .banner-inner .banner-title {
+  margin-left: 10px;
   margin-bottom: 15px;
   display: block;
   color: #fff;
@@ -1979,6 +1982,8 @@ p {
   color: #FF4F1A;
 }
 .banner-wrap .banner-inner .banner-text {
+  margin-left: 10px;
+  width: 96%;
   margin-bottom: 30px;
   color: #fff;
   opacity: 0.85;
